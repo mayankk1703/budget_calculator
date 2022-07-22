@@ -3,7 +3,7 @@ import "./App.css";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseList from "./components/ExpenseList";
 import Alert from "./components/Alert";
-import uuid from "uuid/v4";
+import { v4 as uuid } from 'uuid';
 
 const initialExpenses = localStorage.getItem("expenses")
   ? JSON.parse(localStorage.getItem("expenses"))
